@@ -14,6 +14,11 @@ def division(a,b):
 def square(a):
     return float(a) ** 2
 
+def squareRoot(a):
+    root = float(a) ** 0.5
+    roundRoot = round(root, 8)
+    return roundRoot
+
 class Calculator:
     result = 0
 
@@ -38,4 +43,8 @@ class Calculator:
 
     def square(self, a):
         self.result = square(a)
+        return self.result
+
+    def squareRoot(self,a):
+        self.result = squareRoot(a)
         return self.result
