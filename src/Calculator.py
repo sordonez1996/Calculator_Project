@@ -11,6 +11,9 @@ def division(a,b):
     d = float(a)/ float(b)
     return round(d, 9)
 
+def square(a):
+    return float(a) ** 2
+
 class Calculator:
     result = 0
 
@@ -31,4 +34,8 @@ class Calculator:
 
     def division(self, a,b):
         self.result = division(a, b)
+        return self.result
+
+    def square(self, a):
+        self.result = square(a)
         return self.result
