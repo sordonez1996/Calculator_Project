@@ -24,3 +24,4 @@ class Calculator:
     def multiplication(self, a, b):
         self.result = multiplication(a, b)
         return self.result
+
